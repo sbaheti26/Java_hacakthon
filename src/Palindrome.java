@@ -41,25 +41,26 @@ public class Palindrome {
 
 public static boolean pali(int num)
 {
-	int sum=0,r;
-
-	while(num>0)
+	int sum=0,r,orinum;
+//boolean var=true;
+	orinum=num;
+	while(num!=0)
 	{
 		r=num%10; //getting remainder eg..if num=464..r=4...r=6 r=4
 		sum=(sum*10)+r;//sum=4..46..464
 		num=num/10; //num=46..4..
 	}
-	if(num==sum)
+	if(orinum==sum)
 	{
-		System.out.println("number is palindrome");
+		System.out.println("its a palindrome");
 		return true;
 		
 	}
-	else
-	{
 	
+	else
+		
 	return false;
-	}
+	
 
 
 }
